@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background-color: hsl(200, 80%, 10%);
+}
+
+.new-item-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.form-row > label {
+  font-size: 0.82rem;
+}
+
+.form-row > input {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  outline: none;
+}
+
+.form-row > input:focus {
+  border-color: hsl(200, 100%, 70%);
+}
+
+.btn {
+  background: hsl(200, 100%, 50%);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: hsl(200, 100%, 60%);
+}
+
+.btn-danger {
+  background: hsl(0, 100%, 40%);
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible {
+  background: hsl(0, 100%, 50%);
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list > li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list > li > label {
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+}
+
+.list > li > label > input {
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+}
